@@ -1,4 +1,8 @@
 $download_url = "https://github.com/golangci/golangci-lint/releases/download/v1.28.0/golangci-lint-1.28.0-windows-amd64.zip"
+if ($env:china -eq 1)
+{
+	$download_url = "https://github.wanvi.net/https:/github.com/golangci/golangci-lint/releases/download/v1.28.0/golangci-lint-1.28.0-windows-amd64.zip"
+}
 
 Function Get-Webfile ($url, $toFile)
 {
