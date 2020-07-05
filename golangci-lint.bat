@@ -1,0 +1,1 @@
+PowerShell -NoProfile -ExecutionPolicy Bypass -File golangci-lint.ps1
